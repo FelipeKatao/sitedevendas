@@ -2,11 +2,17 @@
 class navComponente{
     CriarNovoMenu(IdDoMenu,Elementos){
         let MenuEscolhido = document.getElementById(IdDoMenu)
-        MenuEscolhido.innerHTML+="<ul> <li><a href='#'>Home</a></li> <li><a href='#'>Produtos</a></li> <ul>"
+        MenuEscolhido.innerHTML+="<ul id='Menu_02' ></ul>"
+        let MenuAcresentar = document.getElementById("Menu_02")
+
+        Elementos.forEach(MenuAdd => {
+            MenuAcresentar.innerHTML+="<li><a href='#'>"+MenuAdd+"</a></li>"
+        });
+
     }
     CriarBarraNavUsuario(IdDoMenu,Localizacao){
         let MenuEscolhido = document.getElementById(IdDoMenu)
-        MenuEscolhido.innerHTML+="<div class='localNav'>"+Localizacao+"</div>"
+        MenuEscolhido.innerHTML+="<div class='localNav'><h4>"+Localizacao+"</h4></div>"
     }
 }
 

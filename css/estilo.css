@@ -11,12 +11,25 @@
     float: left;
     list-style: none;
     margin-left: 10vh;
-    margin-top: 3vh;
+    margin-top: 1vh;
 }
 
 .barra_navegacao ul li a{
+    position: absolute;
+    transition: all 2s;
     color: white;
     text-decoration: none;
+}
+.barra_navegacao ul {
+    position: absolute;
+    margin-left: 16vh;
+}
+
+.barra_navegacao ul li  a:hover{
+    transition: all 2s;
+    font-size: 2vh;
+    font-style: italic;
+    color: black;
 }
 .localNav{
     background-color: #cfcfcf;
@@ -26,4 +39,20 @@
     position: absolute;
     width: 99.1%;
     height: 4vh;
+}
+.localNav h4{
+    position: absolute;
+    margin-left: 10vh;
+    margin-top: 1vh;
+}
+
+.logo{
+    color: white;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    height: 6vh;
+    width: 19vh;
+    position: absolute;
+    font-size: 4vh;
+    font-family: Arial;
 }
