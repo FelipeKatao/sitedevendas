@@ -1,0 +1,29 @@
+.barra_navegacao{
+    height: 8vh;
+    width: 100%;
+    margin-top: -2vh;
+    background-color: #fa8500;
+}
+
+.barra_navegacao ul li{
+    color: white;
+    font-family: Arial;
+    float: left;
+    list-style: none;
+    margin-left: 10vh;
+    margin-top: 3vh;
+}
+
+.barra_navegacao ul li a{
+    color: white;
+    text-decoration: none;
+}
+.localNav{
+    background-color: #cfcfcf;
+    color: #ff8800;
+    font-family: Arial;
+    margin-top: 8vh;
+    position: absolute;
+    width: 99.1%;
+    height: 4vh;
+}
