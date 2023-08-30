@@ -73,3 +73,26 @@
 .banner h1{
     font-size: 5vh;
 }
+
+.banner button{
+    color: white;
+    font-size: 3vh;
+}
+
+#btBannerAnterior{
+    background-color: #ff8800;
+    height: 6vh;
+    width: 6vh;
+    padding: 2vh;
+    margin-top: 34vh;
+    position: absolute;
+}
+#btBannerProximo{
+    background-color: #ff8800;
+    height: 6vh;
+    width: 6vh;
+    padding: 2vh;
+    margin-top: 34vh;
+    margin-left: 185vh;
+    position: absolute;
+}
