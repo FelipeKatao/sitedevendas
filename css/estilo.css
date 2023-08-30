@@ -56,3 +56,20 @@
     font-size: 4vh;
     font-family: Arial;
 }
+
+.banner{
+    height: 40vh;
+    width: 100%;
+    background-color: #86bcfa;
+    margin-top: 5vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner article{
+    margin-left: 6vh;
+    margin-top: 10vh;
+    position: absolute;
+}
+.banner h1{
+    font-size: 5vh;
+}
