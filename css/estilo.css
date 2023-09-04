@@ -96,6 +96,62 @@
     margin-left: 185vh;
     position: absolute;
 }
-footer{
-    background-color: #cfcfcf;
+
+.CardsElementos{
+    background-color: #CCCC;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    height: 40vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    transition: all 2s;
+    height: 30vh;
+    width: 20vh;
+    background-color: #f0f0f0cc;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    border-radius: 2vh;
+    
+}
+
+.sb{
+    box-shadow: 0.4vh 0.5vh #29292944;
+}
+
+.card h1{
+    font-size: 3vh;
+    color: #86bcfa;
+    font-family: Arial;
+}
+.card h4{
+    color: #9e9e9e;
+}
+
+.card:hover{
+    transition: all 2s;
+    transform: scale(1.2);
+    background-color: rgb(61, 61, 61);
+}
+
+.cardProduto{
+    transition: all 1s;
+    height: 30vh;
+    width: 20vh;
+    background-color: red;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    color: white;
+    border-radius: 2vh;
+}
+
+.cardProduto:hover{
+    transition: all 2s;
+    transform: scale(1.2);
+    background-color: rgb(112, 6, 6);
 }

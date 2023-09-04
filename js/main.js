@@ -1,8 +1,11 @@
 import navComponente from "./nav.js"
 import Banner from "./banner.js"
+import Card from "./cards.js"
 
 let Menus = ["Home","Produtos","Contato"]
 let nav = new navComponente();
+let CardProduto =  new Card()
+
 
 nav.CriarNovoMenu("barra_01",Menus)
 nav.CriarBarraNavUsuario("barra_01","Home")
@@ -45,3 +48,11 @@ document.getElementById("btBannerAnterior").addEventListener("click",()=>{
     }
     B.ModificaBanner("banner_1",BannerInfo,BannerIndex)
 })
+
+CardProduto.EscolherTipo("card sb")
+CardProduto.CriarCards("PortaCard1","Tenis da adidas","è um tenis de alta performance")
+CardProduto.CriarCards("PortaCard1","Tenis da adidas","è um tenis de alta performance")
+
+let CardVenda = new Card()
+CardVenda.EscolherTipo("cardProduto sb")
+CardVenda.CriarCards("PortaCard1","Produto a venda","Venda do produto")
