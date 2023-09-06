@@ -2,6 +2,7 @@ import navComponente from "./nav.js"
 import Banner from "./banner.js"
 import Card from "./cards.js"
 
+function mainPage(){
 let Menus = ["Home","Produtos","Contato"]
 let nav = new navComponente();
 let CardProduto =  new Card()
@@ -56,3 +57,19 @@ CardProduto.CriarCards("PortaCard1","Tenis da adidas","è um tenis de alta perfo
 let CardVenda = new Card()
 CardVenda.EscolherTipo("cardProduto sb")
 CardVenda.CriarCards("PortaCard1","Produto a venda","Venda do produto")
+}
+
+mainPage()
+
+function produtosPage(){
+    let pagina = document.getElementById("pagina")
+    pagina.innerHTML = ""
+    document.getElementsByClassName("localNav")[0].getElementsByTagName("h4")[0].innerHTML = "Produtos"
+}
+let HomeMenu = document.getElementById("Menu_02").getElementsByTagName("li")[0].getElementsByTagName("a")[0]
+HomeMenu.addEventListener("click",()=>{
+
+})
+
+let ProdutoMenu = document.getElementById("Menu_02").getElementsByTagName("li")[1].getElementsByTagName("a")[0]
+ProdutoMenu.addEventListener("click",produtosPage)
