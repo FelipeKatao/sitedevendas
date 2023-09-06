@@ -188,3 +188,12 @@ footer h4{
 
     height: 2vh;
 }
+
+#VitrineProdutos{
+    background-color: #9e9e9e;
+    height: 40vh;
+    width: 140vh;
+    display: flex;
+    margin-top: 4vh;
+    margin-left: 20vh;
+}

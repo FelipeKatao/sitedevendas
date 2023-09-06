@@ -1,6 +1,9 @@
 import navComponente from "./nav.js"
 import Banner from "./banner.js"
 import Card from "./cards.js"
+import paginas from "./paginas.js"
+
+let pag = new paginas()
 
 function mainPage(){
 let Menus = ["Home","Produtos","Contato"]
@@ -17,13 +20,19 @@ B.CriarBanner("banner_1")
 B.ModificaBanner("banner_1",BannerInfo,2)
 
 let BannerIndex = 0
-setInterval(()=>{
+let bannerTime = setInterval(()=>{
+    try{
     //Corpo dela SetInterva
     if(BannerIndex >= 2){
         BannerIndex = 0
-    }
+    }   
     B.ModificaBanner("banner_1",BannerInfo,BannerIndex)
     BannerIndex+=1
+    }
+    catch{
+        console.log("Banner foi parado por algum erro")
+        clearInterval(bannerTime)
+    }
 },9000)
 
 document.getElementById("btBannerProximo").addEventListener("click",()=>{
@@ -65,10 +74,12 @@ function produtosPage(){
     let pagina = document.getElementById("pagina")
     pagina.innerHTML = ""
     document.getElementsByClassName("localNav")[0].getElementsByTagName("h4")[0].innerHTML = "Produtos"
+    pag.PaginaDeProduto()
 }
+
 let HomeMenu = document.getElementById("Menu_02").getElementsByTagName("li")[0].getElementsByTagName("a")[0]
 HomeMenu.addEventListener("click",()=>{
-
+    window.location.reload()
 })
 
 let ProdutoMenu = document.getElementById("Menu_02").getElementsByTagName("li")[1].getElementsByTagName("a")[0]
